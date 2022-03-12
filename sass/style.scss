@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+/* Header */ 
+
+.header {
+    
+    color: #f5f6fa;
+    height: 100vh;
+    background-image: url("/images/Background_Image.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; 
+    
+}
+.container {
+    height: 100vh;
+}
+
+.logo h3  {
+    text-align: left;
+    font-size: 36px;
+    opacity: 100%;
+    color: #fed136;
+    font-family: 'Allura', cursive;
+    text-transform: lowercase;
+    padding: 40px;  
+}
+
+.nav {
+    padding: 50px;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px;
+}
+
+@media (min-width: 720px){
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;    
+    }
+}
+
+.nav ul li a {
+    padding: 0 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #f5f6fa;
+    text-transform: uppercase;
+}
+.nav ul li a:hover {
+    color: #00a8ff;
+}
+
+@media(max-width: 719px){
+    .row {
+        height: 100vh; 
+        overflow: auto; 
+    } 
+    .intro {
+        overflow: hidden;
+        height: 100%;
+    }
+}
+
+.row {
+    height: 100vh; 
+     
+}
+
+.intro {
+    overflow: hidden;
+    height: 100%;
+}
+
+.intro h1 {
+    font-size:75px;
+    padding: 30px 0;
+}
+.intro h2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.intro button {
+    opacity: 0.8;
+    border-radius: 10px;
+    color: #f5f6fa;
+    background-color: #fed136;
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.intro button:hover {
+    background-color:#f5f6fa;
+    color: #00a8ff;
+    cursor: pointer;
+}
+
+/* Service */ 
