@@ -18,11 +18,10 @@ body {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed; 
+    background-color: black;
     
 }
-.container {
-    height: 100vh;
-}
+
 
 .logo h3  {
     text-align: left;
@@ -115,3 +114,42 @@ body {
 }
 
 /* Service */ 
+
+.service {
+    max-width: 80vw;
+    height: 330px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.service h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+}
+.service p {
+    font-size: 18px;
+    font-style: italic;
+    color: #777;
+    padding: 10px 0 30px;
+}
+
+.box {
+    height: 184px;
+    padding: 30px 20px;
+    overflow: hidden
+    ;
+}
+
+.fas  {
+    font-size: 65px;
+    border-radius: 25px;
+    color: #fed136;
+}
+
+.service h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+}
