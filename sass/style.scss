@@ -11,9 +11,9 @@ body {
 /* Header */ 
 
 .header {
-    
+
     color: #f5f6fa;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("/images/Background_Image.jpg");
     background-position: center center;
     background-size: cover;
@@ -34,14 +34,16 @@ body {
 }
 
 .nav {
-    padding: 50px;
+
+    padding: 50px 0;
 }
 
 .nav ul {
     display: flex;
     flex-direction: column;
     list-style: none;
-    padding: 20px;
+    padding: 20px 0;
+
 }
 
 @media (min-width: 720px){
@@ -50,11 +52,12 @@ body {
         flex-direction: row;
         justify-content: space-around;
         list-style-type: none;    
-    }
+    } 
 }
 
 .nav ul li a {
-    padding: 0 20px;
+    display: block;
+    padding: 10px 10px;
     font-size: 20px;
     text-decoration: none;
     color: #f5f6fa;
@@ -62,27 +65,6 @@ body {
 }
 .nav ul li a:hover {
     color: #00a8ff;
-}
-
-@media(max-width: 719px){
-    .row {
-        height: 100vh; 
-        overflow: auto; 
-    } 
-    .intro {
-        overflow: hidden;
-        height: 100%;
-    }
-}
-
-.row {
-    height: 100vh; 
-     
-}
-
-.intro {
-    overflow: hidden;
-    height: 100%;
 }
 
 .intro h1 {
@@ -117,7 +99,7 @@ body {
 
 .service {
     max-width: 80vw;
-    height: 330px;
+    min-height: 330px;
     margin: 100px auto;
     text-align: center;
 }
@@ -153,3 +135,46 @@ body {
     font-weight: bold;
     padding-top: 20px;
 }
+
+/* Portfolio */ 
+
+.portfolio {
+    min-height: 1220px;
+    background-color: gray;
+}
+
+/* Footer */
+
+
+.footer .row {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+
+
+.footer .fa-brands {
+    font-size: 40px;
+    border-radius: 25px;
+    padding: 20px 10px;
+}
+
+.footer p {
+    padding: 30px;
+    font-size: 20px;
+}
+.fa-twitter-square {
+    color: #00aced;
+}
+.fa-facebook {
+    color:#3b5998;
+}
+.fa-pinterest {
+    color: #cb2028;
+}
+.fa-google-plus {
+    color: #da2713;
+}
+
+
+
